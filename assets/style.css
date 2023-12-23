@@ -1,0 +1,104 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Arial';
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+input{
+  background-color: rgba(207, 69, 156, 0.9);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+section div.background-section{
+    width: 100%;
+    height: 105%;
+    position: absolute;
+    z-index: 0;
+}
+
+section div.background-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section div.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient( rgba(97, 35, 74, 0.9), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+
+}
+
+section div.box div.conteudo{
+    width: 80%;
+}
+
+section div.box img{
+    width: 0%;
+    min-width: 300px;
+    margin-top: 20%;
+}
+
+section div.box p{
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section div.box div.navegation_social{
+    list-style-type: none;
+    display: flex;
+    align-items: baseline;
+    column-gap: 20px;
+    margin-bottom: 45%;
+    margin-right: 30%;
+}
+
+section div.box div.navegation_social a.navegation_link{
+   font-family: 'Sora', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    section div.box{
+        width: 300%;
+        padding: 2%;
+        background: rgba(255, 108, 233, 0.4);
+    
+    }
+    
+    section div.box div.conteudo{
+        width: 300%;
+        text-align: center;
+    }
+}
